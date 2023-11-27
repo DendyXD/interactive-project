@@ -1,5 +1,8 @@
 import './js/header'
+import './js/modal-header'
+
 import './js/footer'
+import './js/modal-footer'
 
 import './js/game1'
 import './js/game2'
