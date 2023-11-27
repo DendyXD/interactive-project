@@ -1,0 +1,17 @@
+.game1 {
+    
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &-controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 150px;
+        padding-top: 36px;
+    }
+}
