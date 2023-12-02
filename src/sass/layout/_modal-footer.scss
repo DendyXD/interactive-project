@@ -1,0 +1,34 @@
+.modal-footer {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 90;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    background-color: white;
+
+    &-text {
+        font-family: 'Montserrat Alternates', sans-serif;
+        letter-spacing: 0.05em;
+        font-size: 24px;
+    }
+
+    &-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    &-button {
+        background-color: transparent;
+    }
+
+}
+
+
+body.show-modal .modal-footer {
+    opacity: 1;
+    visibility: visible;
+}

@@ -5,6 +5,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
     }
 
     &-controls {
@@ -13,5 +14,45 @@
         justify-content: space-around;
         gap: 150px;
         padding-top: 36px;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+
+        & p {
+            width: 250px;
+        }
+
+        & button {
+            padding: 10px;
+            background-color: black;
+            border-top-right-radius: 90;
+            border-bottom-right-radius: 90;
+
+            box-shadow: 3px 3px 0 0#00000040;
+        }
+
+        & input {
+            background-color:#D7D7D7;
+            border: none;
+            padding: 10px 55px 10px 10px;
+            border-top-left-radius: 90;
+            border-bottom-left-radius: 90;
+
+            box-shadow: 3px 3px 0 0#00000040;
+
+            &:hover::-webkit-inner-spin-button,
+            &:hover::-webkit-outer-spin-button,
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                display: none;
+            }
+
+            &::placeholder {
+                color: #7E7E7E;
+                margin-right: -51px;
+            }
+        }
     }
 }

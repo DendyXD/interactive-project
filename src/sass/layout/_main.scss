@@ -7,11 +7,14 @@
     align-items: center;
     flex-direction: column;
 
+    box-shadow: -10px 0px 5px -3px #00000040;
+
     &-background {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: gray;
+        background-image: url('../images/background.png');
+        background-color: #EEE;
     }
 
     &-title {
