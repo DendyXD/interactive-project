@@ -1,2 +1,0 @@
-const e=document.querySelector(".js-footer-button"),t=document.body;e.addEventListener("click",(function(){t.classList.add("show-modal")}));const o=document.querySelector(".js-game1-input"),n=document.querySelector(".js-game1-button"),c=document.querySelector(".js-game1-answer");n.addEventListener("click",(function(){Number(o.value)%4==0&&0!==Number(o.value)?(c.style.color="#039900",c.textContent="Ви народилися у високосний рік!"):(c.style.color="#990000",c.textContent="Ви народилися не у високосний рік")}));
-//# sourceMappingURL=index.9841f4fa.js.map
