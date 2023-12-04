@@ -1,0 +1,66 @@
+.calculator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    input {
+        margin: 38px;
+        background-color: #D7D7D7;
+        border: 0;
+        border-radius: 20px;
+        width: 135px;
+        height: 35px;
+        text-align: center;
+        color: #7E7E7E;
+        font-size: 12px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 400;
+        box-shadow: 2px 2px 0px 1px rgba(191, 191, 191);
+        outline: none;
+    }
+    #buttonCalculate {
+        border-radius: 20px;
+        padding: 5px 10px 5px 10px;
+        background-color: black;
+        color: white;
+        border: 0px;
+        margin-right: 38px;
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+
+        .mathSymbolsClass {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        }
+        .mathSymbols {
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            background-color: black;
+            color: white;
+            border: 0px;
+        }
+    }
+    .resultValue {
+        background-color: #D7D7D7;
+        border: 0;
+        border-radius: 20px;
+        width: 135px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #7E7E7E;
+        font-size: 12px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 400;
+    }
+    button {
+        box-shadow: 2px 2px 0px 1px rgba(191, 191, 191);
+    }
+}
