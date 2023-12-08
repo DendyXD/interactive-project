@@ -14,3 +14,5 @@ import './js/game7'
 import './js/game8'
 import './js/game9'
 import './js/slider'
+
+import './js/sort'
