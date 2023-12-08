@@ -13,7 +13,7 @@ let yuor_node = document.getElementById('you');
 // if (!select) {
     //location.reload()
 // } else {
-    // document.write(`<p>Вы: ${select}</p>`)
+    // document.write(<p>Вы: ${select}</p>)
 // }
 
 const computerSelection = () => {
@@ -21,7 +21,7 @@ const computerSelection = () => {
 };
 
 
-//document.write(`<p>Робот: ${selectComputer}</p>`);
+//document.write(<p>Робот: ${selectComputer}</p>);
 
 const playAgainstComputer = (userSelection) => {
     let selectComputer = computerSelection();
@@ -83,4 +83,3 @@ const compare = (choice1,choice2) => {
 
     return 'Начните игру заново!'
 };
-

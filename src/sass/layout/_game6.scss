@@ -1,0 +1,62 @@
+/* dino */
+.dinogame{
+    width: 600px;
+    height: 200px;
+    border-bottom: 2px solid black;
+    margin: auto;
+    background: transparent;
+    z-index: 1;
+}
+.dino{
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/dino.png');
+    background-color: transparent;
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    z-index: 9999;
+}
+
+.cactus{
+    width: 20px;
+    height: 40px;
+    background: url('../images/cactus.png') top center no-repeat;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    z-index: 999;
+    animation: cactusMov 1s infinite linear;
+}
+
+.jump{
+    animation: jump 0.5s  linear;
+}
+
+
+@keyframes cactusMov {
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+@keyframes jump {
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+    }
+    80%{
+        top: 130px;
+    }
+    100%{
+        top: -150px;
+    }
+}
