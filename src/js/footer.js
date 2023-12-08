@@ -1,9 +1,12 @@
 const subscribeBtn = document.querySelector(".js-footer-button");
 
-const body = document.body
+const subscribeInput = document.querySelector(".js-footer-input")
 
-subscribeBtn.addEventListener("click", showModal);
+subscribeBtn.addEventListener("click", showSubscriptionModal);
 
-function showModal() {
-    body.classList.add("show-modal")
+function showSubscriptionModal() {
+    if (subscribeInput.value.includes("@gmail")) {
+        document.body.classList.add("show-modal")
+    }
 }
+

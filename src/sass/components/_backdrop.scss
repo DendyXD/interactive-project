@@ -1,9 +1,40 @@
-body.show-modal::before {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    content: "";
+body.show-modal {
+//     background-color: rgba(0, 0, 0, 0.6);
+//     width: 100%;
+//     height: 100%;
+//     content: "";
+//     position: fixed;
+//     pointer-events: none;
+//     z-index: 998;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+}
+
+.backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 998;
+
+    // pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+body.show-modal .backdrop {
+    // pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+}
+
+body.show-modal .modal-footer {
+    transform: scale(1);
 }
