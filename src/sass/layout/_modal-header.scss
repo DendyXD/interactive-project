@@ -1,0 +1,106 @@
+/* modal window */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text{
+    text-align: center;
+}
+
+// .modal{
+//     transition: transform 200ms ease-in-out;
+//     // transform: scale(1.1);
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 99998;
+//     background-color: rgba(0, 0, 0, .3);
+//     display: grid;
+//     align-items: center;
+//     justify-content: center;
+//     overflow: auto;
+//     // visibility: hidden;
+//     // opacity: 0;
+//     transition: opacity .4s, visibility .4s;
+// }
+.modal_box{
+    position: relative;
+    max-width: 500px;
+    padding: 45px;
+    z-index: 999;
+    margin: 30px 15px ;
+    background-color: #fff;
+    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.3);
+    transform: scale(1.1);
+    transition: transform .8s;
+    border-radius: 20px;
+    width: 576px;
+    height: 316px;
+    background-image: url("../images/Group 133.png") ;
+    background-repeat: no-repeat;
+    background-position:center ;
+    /* background-size: 90% 50%; */
+    /* background-size: contain; */
+    background-size: 95% 40%;
+}
+
+
+.name{
+    display: inline-flex;
+    padding: 10px 90px 10px 10px;
+    align-items: flex-start;
+    gap: 10px; 
+    border-radius: 20px;
+    background: #D7D7D7;
+}
+.btnn{
+    display: inline-flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+    background: #000;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
+}
+
+.close{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.close svg path{
+    transition: fill .4s;
+}
+
+.close:hover svg path{
+fill: aqua;
+}
+
+.close:active svg path{
+    fill: aqua;
+    }
+    
+
+
+// .modal.open{
+// visibility: visible;
+// opacity: 1;
+
+// }
+
+// .modal.open .modal_box{
+// transform: scale(1);
+// }

@@ -10,12 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
-
-  <div class="backdrop">
-    <include src="./partials/modal-header.html"></include>
-  </div>
-
+  <body class=""> <!-- class="show-header-modal"-->
     <include src="./partials/header.html"></include>
     
     <main class="games-container-background">
@@ -38,7 +33,11 @@
 
     <include src="./partials/footer.html"></include>
 
-  <div class="backdrop">
+  <div class="backdrop-header">
+    <include src="./partials/modal-header.html"></include>
+  </div>
+
+  <div class="backdrop-footer">
     <include src="./partials/modal-footer.html"></include>
   </div>
 
