@@ -24,7 +24,7 @@
 document.querySelector('.close').addEventListener("click", modalHeaderClose)
 
 function modalHeaderClose() {
-    document.body.classList.remove("show-modal-header")
+    document.body.classList.remove("show-header-modal")
 }
 
 document.querySelector('.modal').addEventListener('keydown',  event => {
