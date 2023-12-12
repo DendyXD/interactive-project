@@ -1,7 +1,7 @@
 const closeModalBtn = document.querySelector(".modal-footer-button")
 
-closeModalBtn.addEventListener("click", modalHandler)
+closeModalBtn.addEventListener("click", modalFooterHandler)
 
-function modalHandler() {
-    document.body.classList.toggle("show-modal")
+function modalFooterHandler() {
+    document.body.classList.toggle("show-modal-footer")
 }

@@ -6,7 +6,7 @@ subscribeBtn.addEventListener("click", showSubscriptionModal);
 
 function showSubscriptionModal() {
     if (subscribeInput.value.includes("@gmail")) {
-        document.body.classList.add("show-modal")
+        document.body.classList.add("show-modal-footer")
     }
 }
 
