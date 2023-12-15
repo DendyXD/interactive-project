@@ -10,12 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <script type="module" src="./index.js"></script>
   </head>
-  <body>
-
-    <include src="./partials/modal-header.html"></include>
-
+  <body class="show-header-modal"> <!-- class="show-header-modal"-->
     <include src="./partials/header.html"></include>
-
+    
     <main class="games-container-background">
       <div class="games-container">
         <h1 class="games-container-title">Популярні інтерактивні ігри</h1>
@@ -29,14 +26,25 @@
         <include src="./partials/game7.html"></include>
         <include src="./partials/game8.html"></include>
         <include src="./partials/game9.html"></include>
+
         <include src="./partials/slider.html"></include>
       </div>
     </main>
 
     <include src="./partials/footer.html"></include>
 
+  <div class="backdrop-header">
+    <include src="./partials/modal-header.html"></include>
+  </div>
+
+  <div class="backdrop-footer">
     <include src="./partials/modal-footer.html"></include>
+  </div>
+
+  <div style="display: none;" id="for-parcel-to-recognize-imgs">
+    <img src="./images/logo-dark.svg" alt="">
 
     
+  </div>
   </body>
 </html>
