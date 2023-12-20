@@ -16,3 +16,4 @@ import './js/game9'
 import './js/slider'
 
 import './js/sort'
+import './js/darktheme'

@@ -4,10 +4,17 @@ const ball = document.querySelector(".game7-ball")
 
 let ballRotateCounter = 0;
 
+let previousX = 0;
+
 field.addEventListener("click", ballMoveHandler)
 
 function ballMoveHandler(e) {
-    ballRotateCounter += 60;
+    if (e.offsetX > previousX) {
+        ballRotateCounter += 45;
+    } else {
+        ballRotateCounter -= 45;
+    }
+    previousX = e.offsetX;
     ball.style.rotate = `${ballRotateCounter}deg`;
 
     if (e.offsetY > 170) {

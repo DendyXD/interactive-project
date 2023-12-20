@@ -1,12 +1,8 @@
 .game1 {
-    
-    &-section {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
-    }
 
     &-controls {
         display: flex;
