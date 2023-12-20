@@ -1,4 +1,5 @@
 //*Камінь - ножиці - папір
+
 const items = ['папір', 'ножиці', 'Камінь']
 
 let draw = 0;
@@ -8,6 +9,7 @@ let you = 0;
 let draw_node = document.getElementById('draw');
 let comp_node = document.getElementById('computer');
 let yuor_node = document.getElementById('you');
+
 const demoText = document.querySelector('.text')
 const resComp = document.querySelector('.comp')
 
@@ -16,8 +18,6 @@ const computerSelection = () => {
     return items[Math.floor(Math.random()*items.length)];
 };
 
-
-//document.write(`<p>Робот: ${selectComputer}</p>`);
 
 const playAgainstComputer = (userSelection) => {
     let selectComputer = computerSelection();
@@ -44,7 +44,7 @@ const playAgainstComputer = (userSelection) => {
         default:
             console.log(gameResult + " is invalid value");
 
-           demoText.textContent =  gameResult
+           demoText.textContent =  gameResult;
     }
 
 };
@@ -84,3 +84,4 @@ const compare = (choice1,choice2) => {
 
     return 'Начните игру заново!'
 };
+
