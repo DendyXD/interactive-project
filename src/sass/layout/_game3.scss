@@ -1,19 +1,11 @@
 /* Камінь - ножиці - папір */
 
-/* .allrockpaperscissor{
-    width: 600px;
-    height: 200px;
-    border-bottom: 2px solid black;
-    margin: auto;
-}
-
- */
 .allrockpaperscissor{
     width: 536px;
     /* height: 200px; */
     // border-bottom: 2px solid black;
     margin: auto;
-   
+    text-align: center;
 }
 
 h2{
@@ -27,7 +19,8 @@ h2{
 
 .ulli{
 display: inline-flex;
-align-items: flex-start;
+align-items: center;
+/* margin-left: 80px; */
 gap: 10px;
 border-radius: 20px;
 list-style: none;
@@ -37,6 +30,7 @@ list-style: none;
  display: inline-flex;
 padding: 10px 20px;
 align-items: center;
+/* margin-left: 200px; */
 gap: 10px;
 border-radius: 20px;
 background: #000;

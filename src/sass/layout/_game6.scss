@@ -1,5 +1,4 @@
-/* dino */
-.dinogame{
+/* dino */.dinogame{
     width: 600px;
     height: 200px;
     border-bottom: 2px solid black;
@@ -7,10 +6,13 @@
     background: transparent;
     z-index: 1;
 }
-.dino{
+h2{
+    text-align: center;
+}
+#dino{
     width: 50px;
     height: 50px;
-    background-image: url('../images/dino.png');
+    background-image: url(/img/dino.jpeg);
     background-color: transparent;
     background-size: 50px 50px;
     position: relative;
@@ -18,10 +20,10 @@
     z-index: 9999;
 }
 
-.cactus{
-    width: 20px;
-    height: 40px;
-    background: url('../images/cactus.png') top center no-repeat;
+#cactus{
+    width: 50px;
+    height: 50px;
+    background: url(/img/cactus.jpeg) top center no-repeat;
     position: relative;
     top: 110px;
     left: 580px;
