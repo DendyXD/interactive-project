@@ -23,12 +23,12 @@
 
 document.querySelector('.close').addEventListener("click", modalHeaderClose)
 
-function modalHeaderClose() {
-    document.body.classList.remove("show-header-modal")
-}
-
-document.querySelector('.modal').addEventListener('keydown',  event => {
-    if (event.keyCode == 27) {
+window.addEventListener('keydown',  event => {
+    if (event.key === "Escape") {
         modalHeaderClose()
     }
 })
+
+function modalHeaderClose() {
+    document.body.classList.remove("show-header-modal")
+}

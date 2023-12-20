@@ -1,0 +1,11 @@
+.__select {
+    header.dark-triangle & {
+        .__select__title:after {
+            background-color: white;
+        }
+        .__select__title:before {
+            background-color: white;
+
+        }
+    }
+}
