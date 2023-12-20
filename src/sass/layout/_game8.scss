@@ -3,7 +3,7 @@
 .enternum{
     width: 536px;
     /* height: 200px; */
-    border-bottom: 2px solid black;
+    // border-bottom: 2px solid black;
     margin: auto;
 }
 .h{
@@ -17,7 +17,9 @@ h2{
 h3{
   font-size: 12px;
 }
-
+.inp{
+  margin: 25px;
+ }
 .num{
     display: inline-flex;
     padding: 10px 20px;
