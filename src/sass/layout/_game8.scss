@@ -5,6 +5,7 @@
     /* height: 200px; */
     // border-bottom: 2px solid black;
     margin: auto;
+    text-align: center;
 }
 .h{
     text-align: center;
@@ -17,9 +18,10 @@ h2{
 h3{
   font-size: 12px;
 }
-.inp{
+ .inp{
   margin: 25px;
  }
+
 .num{
     display: inline-flex;
     padding: 10px 20px;
@@ -28,17 +30,7 @@ h3{
     width: 95px;
     height: 15px;
     color: #7E7E7E;
-  /* font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; */
-
     border-radius: 20px;
     background: #D7D7D7;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
-}
-
-.btn{
-    margin-top: 25px;
-    color: #7E7E7E;
 }

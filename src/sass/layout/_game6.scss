@@ -2,12 +2,15 @@
 .dinogame{
     width: 600px;
     height: 200px;
-    border-bottom: 2px solid black;
+    // border-bottom: 2px solid black;
     margin: auto;
     background: transparent;
     z-index: 1;
 }
-.dino{
+h2{
+    text-align: center;
+}
+#dino{
     width: 50px;
     height: 50px;
     background-image: url('../images/dino.png');
@@ -18,9 +21,9 @@
     z-index: 9999;
 }
 
-.cactus{
-    width: 20px;
-    height: 40px;
+#cactus{
+    width: 50px;
+    height: 50px;
     background: url('../images/cactus.png') top center no-repeat;
     position: relative;
     top: 110px;
@@ -28,6 +31,8 @@
     z-index: 999;
     animation: cactusMov 1s infinite linear;
 }
+
+
 
 .jump{
     animation: jump 0.5s  linear;
