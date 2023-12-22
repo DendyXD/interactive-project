@@ -12,7 +12,7 @@ h2{
 #dino{
     width: 50px;
     height: 50px;
-    background-image: url(/img/dino.jpeg);
+    background-image: url("../images/dino.png");
     background-color: transparent;
     background-size: 50px 50px;
     position: relative;
@@ -23,7 +23,7 @@ h2{
 #cactus{
     width: 50px;
     height: 50px;
-    background: url(/img/cactus.jpeg) top center no-repeat;
+    background: url("../images/cactus.png") top center no-repeat;
     position: relative;
     top: 110px;
     left: 580px;
