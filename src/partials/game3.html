@@ -1,35 +1,34 @@
-<div id="entertainment-game" class="allrockpaperscissor">
-    <div class="delimiter"></div>
-        <h2 class="t-font">Камінь - ножиці - папір </h2>
-    
-        <div class="compyou">
-          <p class="m-font">Рахунок <span id="draw">0</span></p>
-          <p class="m-font">Комп'ютер <span id="computer">0</span></p>
-          <p class="m-font">Ви <span id="you">0</span></p>
-        </div>
 
-        <ul class="ulli">
-         <li class="pick-one">
-          <button type="button" id="rockButton" class="rockpapersscissor">
-            <img class="rock" src="./images/game3/Frame 127.svg" alt="rock" onclick="return playAgainstComputer('камінь')">
-            Камінь
-          </button>
-         </li>
-       
-          <li class="pick-one">
-          <button type="button" id="paperButton" class="rockpapersscissor" onclick="return playAgainstComputer('папір')">
-            <img class="papers" src="./images/game3/Frame 128.svg" alt="paper">
-            папір
-          </button>
-          </li>
+<div class="allrockpaperscissor">
+  <div class="delimiter"></div>
+  <h2>Камінь - ножиці - папір </h2>
 
-          <li class="pick-one">
-          <button type="button" id="scissorButton" class="rockpapersscissor" onclick="return playAgainstComputer('ножиці')">
-            <img class="scissor" src="./images/game3/Frame 126.svg" alt="sscissor">
-            ножиці
-          </button>
-          </li>
-         </ul>
-<p class="text m-font"></p>
-         <span style="color: white;" class="comp m-font">Варіант комп'ютера </span>
-    </div>
+  <div class="compyou">
+    <p>Рахунок <span id="draw">0</span></p>
+    <p>Комп'ютер <span id="computer">0</span></p>
+    <p>Ви <span id="you">0</span></p>
+  </div>
+
+  <ul class="ulli">
+   <li class="pick-one">
+    <button class="rockpapersscissor" onclick="return playAgainstComputer('Камень')">
+      <img class="rock" src="./images/game3/Frame 127.svg" alt="rock">
+    </button>
+   </li>
+ 
+    <li class="pick-one">
+    <button class="rockpapersscissor" onclick="return playAgainstComputer('ножницы')">
+      <img class="papers" src="./images/game3/Frame 126.svg" alt="paper">
+    </button>
+    </li>
+
+    <li class="pick-one">
+    <button class="rockpapersscissor" onclick="return playAgainstComputer('бумага')">
+      <img class="scissor" src="./images/game3/Frame 128.svg" alt="sscissor">
+    </button>
+    </li>
+   </ul>
+<p class="text"></p>
+   <span class="comp">Варіант комп'ютера </span>
+</div>
+

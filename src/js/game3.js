@@ -9,6 +9,7 @@ let you = 0;
 let draw_node = document.getElementById('draw');
 let comp_node = document.getElementById('computer');
 let yuor_node = document.getElementById('you');
+
 const demoText = document.querySelector('.text')
 const resComp = document.querySelector('.comp')
 // document.querySelector("#rockButton").addEventListener("click", playAgainstComputer("Камінь"))
@@ -18,7 +19,6 @@ const resComp = document.querySelector('.comp')
 function computerSelection() {
     return items[Math.floor(Math.random()*items.length)];
 };
-
 
 function playAgainstComputer(userSelection) {
     let selectComputer = computerSelection();
@@ -45,7 +45,7 @@ function playAgainstComputer(userSelection) {
         default:
             console.log(gameResult + " is invalid value");
 
-           demoText.textContent =  gameResult
+           demoText.textContent =  gameResult;
     }
 
 };
@@ -82,6 +82,5 @@ if (choice1 === "камінь") {
             return "Ви виграли!";
         }}
 
-
-    return 'Почніть гру знову!'
+   return 'Начните игру заново!'
 };

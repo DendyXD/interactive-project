@@ -9,17 +9,18 @@ function themeTogglerHandler() {
         togglerCounter = 1;
 
         document.querySelectorAll("button").forEach((btn) => {
-            btn.style.backgroundColor = "white"
-            btn.style.color = "black"
+            if (btn !== document.querySelector(".js-game1-button") && btn !== document.querySelector(".js-game2-button")) {
+                btn.style.backgroundColor = "white";
+                btn.style.color = "black";
+            } else {
+                btn.style.backgroundColor = "#262230";
+            }
         })
         document.querySelectorAll(".delimiter").forEach((delim) => {
             delim.style.backgroundColor = "white"
         })
         document.querySelectorAll(".m-font").forEach((font) => {
-            if (font !== document.querySelector(".js-game1-answer")) {
-                font.style.color = "white";
-            }
-            if (font !== document.querySelector(".js-game2-answer")) {
+            if (font !== document.querySelector(".js-game1-answer")) { // && font !== document.querySelector(".js-game2-answer")
                 font.style.color = "white";
             }
         })
@@ -35,9 +36,6 @@ function themeTogglerHandler() {
         })
         document.querySelectorAll("#close-symbol").forEach((symb) => {
             symb.src = "/close-symbol-dark.28d57fa5.svg";
-        })
-        document.querySelectorAll("#search-icon").forEach((icon) => {
-            icon.src = "/search-icon-dark.950b0e0f.svg";
         })
 
     // Header
@@ -66,8 +64,12 @@ function themeTogglerHandler() {
         }
 
     // Guess Number (game2)
-        // if (document.querySelector(".js-game2-answer").style.color === "black") {
+        // if (document.querySelector(".js-game2-answer").style.color !== "rgb(3, 153, 0);" && document.querySelector(".js-game2-answer").style.color !== "rgb(153, 0, 0);") {
+        //     console.log("aboba");
         //     document.querySelector(".js-game2-answer").style.color = "white";
+        // }
+        // if (document.querySelector(".js-game2-answer").style.color === "black") {
+        //     document.querySelector(".js-game2-answer").style.color = "#FFF";
         // }
         
     // Rock Paper Scissors (game3)
@@ -107,11 +109,8 @@ function themeTogglerHandler() {
             delim.style.backgroundColor = "black"
         })
         document.querySelectorAll(".m-font").forEach((font) => {
-            if (font !== document.querySelector(".js-game1-answer")) {
+            if (font !== document.querySelector(".js-game1-answer")) { // && font !== document.querySelector(".js-game2-answer")
                 font.style.color = "black";
-            }
-            if (font !== document.querySelector(".js-game2-answer")) {
-                font.style.color = "black"
             }
         })
         document.querySelectorAll(".t-font").forEach((font) => {
@@ -126,9 +125,6 @@ function themeTogglerHandler() {
         })
         document.querySelectorAll("#close-symbol").forEach((symb) => {
             symb.src = "/close-symbol.28d57fa5.svg";
-        })
-        document.querySelectorAll("#search-icon").forEach((icon) => {
-            icon.src = "/search-icon.8c15998e.svg";
         })
 
 
@@ -155,6 +151,14 @@ function themeTogglerHandler() {
         if (document.querySelector(".js-game1-answer").textContent === "Чи ви народилися у високосний рік?") {
             document.querySelector(".js-game1-answer").style.color = "black";
         }
+
+    // Guess Number (game2)
+        // if (document.querySelector(".js-game2-answer").style.color !== "rgb(3, 153, 0);" && document.querySelector(".js-game2-answer").style.color !== "rgb(153, 0, 0);") {
+        //     document.querySelector(".js-game2-answer").style.color = "black";
+        // }
+        // if (document.querySelector(".js-game2-answer").style.color === "#FFF") {
+        //     document.querySelector(".js-game2-answer").style.color = "#000";
+        // }
 
     // Rock Paper Scissors (game3)
         document.querySelector(".comp").style.color = "white";

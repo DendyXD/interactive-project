@@ -20,8 +20,12 @@
 //     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'));
 //     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue('left'));
 
-//     if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140){
+// function jump () {
+//     dino.classList.add('jump')
+//     setTimeout(() => {
+//         dino.classList.remove('jump')
+//     }, 500);
 
-//         alert('Game Over!')
-//     }
-// },10)
+//     // 1000 = 1 second
+//     // 500 = 0.5 second
+// }
