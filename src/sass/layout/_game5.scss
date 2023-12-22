@@ -1,0 +1,68 @@
+.time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        padding: 10px;
+        background-color: black;
+        border-top-right-radius: 90;
+        border-bottom-right-radius: 90;
+
+        box-shadow: 3px 3px 0 0#00000040;
+    }
+    input {
+        margin: 38px;
+        margin-right: 0;
+        background-color: #D7D7D7;
+        border: 0;
+        // border-radius: 20px;
+        width: 150px;
+        height: 35px;
+        text-align: center;
+        color: #7E7E7E;
+        font-size: 12px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 400;
+        box-shadow: 2px 2px 0px 1px rgba(191, 191, 191);
+        outline: none;
+    }
+    .resultValue {
+        // background-color: #D7D7D7;
+        border: 0;
+        border-radius: 20px;
+        width: 135px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #7E7E7E;
+        font-size: 12px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: 400;
+    }
+    .dots {
+        width: 100px;
+        height: 1px;
+        border: 1px dashed black;
+        margin-left: 33px;
+        margin-right: 33px;
+    }
+    .inputTime {
+        border: none;
+        border-top-left-radius: 90;
+        border-bottom-left-radius: 90;
+
+
+    }
+    
+}
+.text-time {
+    font-size: 16px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+    // line-height: 19.5px;
+    margin-right: 38px;
+}
