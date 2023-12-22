@@ -20,7 +20,9 @@ function computerSelection() {
     return items[Math.floor(Math.random()*items.length)];
 };
 
+
 let playAgainsuserSelection;
+
 function playAgainstComputer(userSelection) {
     let selectComputer = computerSelection();
 

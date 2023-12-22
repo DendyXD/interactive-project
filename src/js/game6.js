@@ -1,26 +1,31 @@
-//*dino2
-const dino = document.getElementById('dino');
-const cactus = document.getElementById('cactus');
+ //*dino2
 
-document.addEventListener('click', function(event){
-    jump();
-});
+// const dino = document.getElementById('dino');
+// const cactus = document.getElementById('cactus');
 
-function jump () {
-    if(dino.classList != 'jump'){
-        dino.classList.add('jump')
-    }
-    setTimeout(function() {
-        dino.classList.remove('jump')
-    },300);
-}
+// document.addEventListener('click', function(event){
+//     jump();
+// });
 
-let isAlive = setInterval (function (){
-    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'));
-    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue('left'));
+// function jump () {
+//     if(dino.classList != 'jump'){
+//         dino.classList.add('jump')
+//     }
+//     setTimeout(function() {
+//         dino.classList.remove('jump')
+//     },300);
+// }
 
-    if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140){
+// let isAlive = setInterval (function (){
+//     let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue('top'));
+//     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue('left'));
 
-        alert('Game Over!')
-    }
-},10)
+// function jump () {
+//     dino.classList.add('jump')
+//     setTimeout(() => {
+//         dino.classList.remove('jump')
+//     }, 500);
+
+//     // 1000 = 1 second
+//     // 500 = 0.5 second
+// }
