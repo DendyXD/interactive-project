@@ -159,9 +159,9 @@ function themeTogglerHandler() {
         }
 
     // Rock Paper Scissors (game3)
-        document.querySelector(".comp").style.color = "black";
-        document.querySelector(".comp").style.backgroundColor = "white";
-        document.querySelector(".compyou").style.color = "white";
+        document.querySelector(".comp").style.color = "white";
+        document.querySelector(".comp").style.backgroundColor = "black";
+        document.querySelector(".compyou").style.color = "black";
         
     // Calculator (game4)
         document.querySelectorAll(".mathSymbols").forEach((symb) => {
