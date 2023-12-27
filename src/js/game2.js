@@ -11,14 +11,21 @@ function showGuessedNumber() {
     if (game2Input.value !== "") {
         if (Number(game2Input.value) === guessedNum) {
             game2Answer.textContent = `Вітаю! Ви вгадали число. (${guessedNum})`;
-            game2Answer.style.color = "#039900";
+            game2Answer.classList.add("right-answer-game2")
+            game2Answer.classList.remove("false-answer-game2")
+            game2Answer.style.color = "none";
         } else {
             game2Answer.textContent = `Ви програли, комп'ютер загадав ${guessedNum}`;
-            game2Answer.style.color = "#990000";
+            game2Answer.classList.add("false-answer-game2")
+            game2Answer.classList.remove("right-answer-game2")
+            game2Answer.style.color = "none";
+
         }
     } else {
         game2Answer.textContent = `Введіть число для перевірки`;
-        game2Answer.style.color = "#990000";
+        game2Answer.classList.add("false-answer-game2")
+        game2Answer.classList.remove("right-answer-game2")
+        game2Answer.style.color = "none";
 
     }
 

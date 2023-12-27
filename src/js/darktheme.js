@@ -20,7 +20,7 @@ function themeTogglerHandler() {
             delim.style.backgroundColor = "white"
         })
         document.querySelectorAll(".m-font").forEach((font) => {
-            if (font !== document.querySelector(".js-game1-answer")) { // && font !== document.querySelector(".js-game2-answer")
+            if (font !== document.querySelector(".js-game1-answer") && font !== document.querySelector(".js-game2-answer")) { // 
                 font.style.color = "white";
             }
         })
@@ -57,24 +57,21 @@ function themeTogglerHandler() {
         document.querySelector(".games-container-title").style.color = "white";
 
     // Leap Year Test (game1)
-        document.querySelector(".js-game1-input").style.boxShadow = "0 0 0 0";
         document.querySelector(".js-game1-input").classList.add("game1-dark-theme-input")
         if (document.querySelector(".js-game1-answer").textContent === "Чи ви народилися у високосний рік?") {
             document.querySelector(".js-game1-answer").style.color = "white";
         }
 
     // Guess Number (game2)
-        // if (document.querySelector(".js-game2-answer").style.color !== "rgb(3, 153, 0);" && document.querySelector(".js-game2-answer").style.color !== "rgb(153, 0, 0);") {
-        //     console.log("aboba");
-        //     document.querySelector(".js-game2-answer").style.color = "white";
-        // }
-        // if (document.querySelector(".js-game2-answer").style.color === "black") {
-        //     document.querySelector(".js-game2-answer").style.color = "#FFF";
-        // }
+        if (!document.querySelector(".js-game2-answer").classList.contains("right-answer-game2") || !document.querySelector(".js-game2-answer").classList.contains("false-answer-game2")) {
+            document.querySelector(".js-game2-answer").style.color = "white";
+        }
         
     // Rock Paper Scissors (game3)
         document.querySelector(".comp").style.color = "black";
         document.querySelector(".comp").style.backgroundColor = "white";
+        document.querySelector(".compyou").style.color = "white";
+        
 
         
     // Calculator (game4)
@@ -86,6 +83,13 @@ function themeTogglerHandler() {
         document.querySelector("#num2").style.boxShadow = "0 0 0 0";
         document.querySelector(".resultValue").style.backgroundColor = "white";
         document.querySelector(".resultValue").style.color = "black";
+
+    // Time Calculator (game5)
+        document.querySelector(".dots").style.border = "1px dashed white";
+        document.querySelector("#resultTime").style.color = "white";
+        document.querySelector(".calculateButton-time").style.backgroundColor = "#262230";
+        document.querySelector(".inputTime").style.boxShadow = "0 0 0 0";
+        document.querySelector(".text-time").style.color = "white";
 
     // Footer
         document.querySelector("footer").style.color = "white";
@@ -146,19 +150,15 @@ function themeTogglerHandler() {
         document.querySelector(".games-container-title").style.color = "black";
 
     // Leap Year Test (game1)
-        document.querySelector(".js-game1-input").style.boxShadow = "0 0 0 0";
         document.querySelector(".js-game1-input").classList.add("game1-dark-theme-input")
         if (document.querySelector(".js-game1-answer").textContent === "Чи ви народилися у високосний рік?") {
             document.querySelector(".js-game1-answer").style.color = "black";
         }
 
     // Guess Number (game2)
-        // if (document.querySelector(".js-game2-answer").style.color !== "rgb(3, 153, 0);" && document.querySelector(".js-game2-answer").style.color !== "rgb(153, 0, 0);") {
-        //     document.querySelector(".js-game2-answer").style.color = "black";
-        // }
-        // if (document.querySelector(".js-game2-answer").style.color === "#FFF") {
-        //     document.querySelector(".js-game2-answer").style.color = "#000";
-        // }
+        if (!document.querySelector(".js-game2-answer").classList.contains("right-answer-game2") || !document.querySelector(".js-game2-answer").classList.contains("false-answer-game2")) {
+            document.querySelector(".js-game2-answer").style.color = "black";
+        }
 
     // Rock Paper Scissors (game3)
         document.querySelector(".comp").style.color = "white";
@@ -167,13 +167,20 @@ function themeTogglerHandler() {
         
     // Calculator (game4)
         document.querySelectorAll(".mathSymbols").forEach((symb) => {
-            symb.style.boxShadow = "0 0 0 0";
+            symb.style.boxShadow = "2px 2px 0px 1px rgba(191, 191, 191)";
         })
-        document.querySelector("#buttonCalculate").style.boxShadow = "0 0 0 0";
-        document.querySelector("#num1").style.boxShadow = "0 0 0 0";
-        document.querySelector("#num2").style.boxShadow = "0 0 0 0";
+        document.querySelector("#buttonCalculate").style.boxShadow = "2px 2px 0px 1px rgba(191, 191, 191)";
+        document.querySelector("#num1").style.boxShadow = "2px 2px 0px 1px rgba(191, 191, 191)";
+        document.querySelector("#num2").style.boxShadow = "2px 2px 0px 1px rgba(191, 191, 191)";
         document.querySelector(".resultValue").style.backgroundColor = "#D7D7D7";
         document.querySelector(".resultValue").style.color = "#7E7E7E";
+
+    // Time Calculator (game5)
+        document.querySelector(".dots").style.border = "1px dashed black";
+        document.querySelector("#resultTime").style.color = "#7E7E7E";
+        document.querySelector(".calculateButton-time").style.backgroundColor = "black";
+        document.querySelector(".inputTime").style.boxShadow = "2px 2px 0px 1px rgba(191, 191, 191)";
+        document.querySelector(".text-time").style.color = "black";
 
     // Footer
         document.querySelector("footer").style.color = "black";

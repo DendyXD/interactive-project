@@ -48,10 +48,13 @@
             &::placeholder {
                 color: #7E7E7E;
             }
-
-            // &.game1-dark-theme-input &::placeholder {
-            //     color: black;
-            // }
         }
+    }
+
+    .right-answer-game2 {
+        color: #039900 !important;
+    }
+    .false-answer-game2 {
+        color: #990000 !important;
     }
 }
