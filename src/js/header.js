@@ -1,6 +1,9 @@
 const selectSingle = document.querySelector('.__select');
 const selectSingle_title = selectSingle.querySelector('.__select__title');
 const selectSingle_labels = selectSingle.querySelectorAll('.__select__label');
+const userName = document.querySelector(".name");
+const submitButton = document.querySelector('.btnn');
+const oldName = document.querySelector('.header-greetings');
 
 selectSingle_title.addEventListener('click', () => {
   if ('active' === selectSingle.getAttribute('data-state')) {
@@ -16,3 +19,7 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
     selectSingle.setAttribute('data-state', '');
   });
 }
+function newName() {
+  oldName.textContent = `Вітаємо, ${userName.value}`
+}
+submitButton.addEventListener('click', newName);
