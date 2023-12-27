@@ -1,0 +1,58 @@
+<!-- <ul id="scientistList">
+  <li data-birth="1809" data-name="Charles" data-surname="Darwin">Charles Darwin</li>
+  <li data-birth="1879" data-name="Albert" data-surname="Einstein">Albert Einstein</li>
+  <li data-birth="1867" data-name="Marie" data-surname="Curie">Marie Curie</li>
+  <li data-birth="1769" data-name="Napoleon" data-surname="Bonaparte">Napoleon Bonaparte</li>
+  <li data-birth="1743" data-name="Thomas" data-surname="Jefferson">Thomas Jefferson</li>
+  <li data-birth="1564" data-name="Galileo" data-surname="Galilei">Galileo Galilei</li>
+  <li data-birth="1903" data-name="Niels" data-surname="Bohr">Niels Bohr</li>
+  <li data-birth="1473" data-name="Nicolaus" data-surname="Copernicus">Nicolaus Copernicus</li>
+  <li data-birth="1643" data-name="Isaac" data-surname="Newton">Isaac Newton</li>
+  <li data-birth="1818" data-name="Karl" data-surname="Marx">Karl Marx</li>
+  <li data-birth="1922" data-name="Alan" data-surname="Turing">Alan Turing</li>
+  <li data-birth="1736" data-name="Patrick" data-surname="Henry">Patrick Henry</li>
+</ul>
+
+
+<label><input type="radio" name="fact" value="bornIn20thCentury">Які вчені народилися в 19 ст.</label>
+<label><input type="radio" name="fact" value="bornInAmerica">Знайти рік народження Albert Einshtein</label>
+<label><input type="radio" name="fact" value="sortAlphabetically">Відсортувати вчених за алфавітом</label>
+<label><input type="radio" name="fact" value="startsWithC">Знайти вчених, прізвища яких починаються на літеру “С”</label>
+<label><input type="radio" name="fact" value="sortByAge">Відсортувати вчених за кількістю прожитих років</label>
+<label><input type="radio" name="fact" value="removeStartsWithA">Видалити всіх вчених, ім’я яких починається на “А”</label>
+<label><input type="radio" name="fact" value="findOldest">Знайти вченого, який народився найпізніше</label>
+<label><input type="radio" name="fact" value="findMinMaxAge">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</label>
+<label><input type="radio" name="fact" value="sameInitials">Знайти вчених, в яких співпадають перші літери імені і прізвища</label> -->
+<div class="delimiter"></div>
+
+<p class="text-game9">Обери вченого/их</p>
+<div id="page-container">
+  <div class="grid-container" id="scientistList">
+    <div class="grid-item" data-birth="1809" data-death="1882" data-name="Charles" data-surname="Darwin"><img src="./images/scientists/Charles_Darwin.jpg" alt="Charles_Darwin"></div>
+    <div class="grid-item" data-birth="1879" data-death="1955" data-name="Albert" data-surname="Einstein"><img src="./images/scientists/Albert_Einstein.jpg" alt="Albert_Einstein"></div>
+    <div class="grid-item" data-birth="1913" data-death="2002" data-name="Nikolai" data-surname="Amosov"><img src="./images/scientists/Amosov_Nikolai.jpg" alt="Amosov_Nikolai"></div>
+    <div class="grid-item" data-birth="1867" data-death="1934" data-name="Marie" data-surname="Curie"><img src="./images/scientists/Marie_Curie.jpg" alt="Marie_Curie"></div>
+    <div class="grid-item" data-birth="1743" data-death="1826" data-name="Thomas" data-surname="Jefferson"><img src="./images/scientists/Thomas_Jefferson.jpg" alt="Thomas_Jefferson"></div>
+    <div class="grid-item" data-birth="1564" data-death="1642" data-name="Galileo" data-surname="Galilei"><img src="./images/scientists/Galileo_Galilei.jpg" alt="Galileo_Galilei"></div>
+    <div class="grid-item" data-birth="1885" data-death="1962" data-name="Niels" data-surname="Bohr"><img src="./images/scientists/Niels_Bohr.jpg" alt="Niels_Bohr"></div>
+    <div class="grid-item" data-birth="1473" data-death="1543" data-name="Nicolaus" data-surname="Copernicus"><img src="./images/scientists/Nicolaus_Copernicus.jpg" alt="Nicolaus_Copernicus"></div>
+    <div class="grid-item" data-birth="1643" data-death="1727" data-name="Isaac" data-surname="Newton"><img src="./images/scientists/Isaac_Newton.jpg" alt="Isaac_Newtone"></div>
+    <div class="grid-item" data-birth="1818" data-death="1883" data-name="Karl" data-surname="Marx"><img src="./images/scientists/Karl_Marx.jpg" alt="Karl_Marx"></div>
+    <div class="grid-item" data-birth="1912" data-death="1954" data-name="Alan" data-surname="Turing"><img src="./images/scientists/Alan_Turing.jpg" alt="Alan_Turing"></div>
+    <div class="grid-item" data-birth="1736" data-death="1799" data-name="Patrick" data-surname="Henry"><img src="./images/scientists/Patrick_Henry.jpg" alt="Patrick_Henry"></div>
+  </div>
+</div>
+
+<div id="factContainer">
+  <label><input type="radio" name="fact" value="bornIn20thCentury">Які вчені народилися в 19 ст.</label>
+  <label><input type="radio" name="fact" value="bornInAmerica">Знайти рік народження Albert Einshtein</label>
+  <label><input type="radio" name="fact" value="sortAlphabetically">Відсортувати вчених за алфавітом</label>
+  <label><input type="radio" name="fact" value="startsWithC">Знайти вчених, прізвища яких починаються на літеру “К”</label>
+  <label><input type="radio" name="fact" value="sortByAge">Відсортувати вчених за кількістю прожитих років</label>
+  <label><input type="radio" name="fact" value="removeStartsWithA">Видалити всіх вчених, ім’я яких починається на “А”</label>
+  <label><input type="radio" name="fact" value="findOldest">Знайти вченого, який народився найпізніше</label>
+  <label><input type="radio" name="fact" value="findMinMaxAge">Знайти вченого, який прожив найдовше і вченого,<br> який прожив найменше</label>
+  <label><input type="radio" name="fact" value="sameInitials">Знайти вчених, в яких співпадають перші літери імені і прізвища</label>
+</div>
+
+
