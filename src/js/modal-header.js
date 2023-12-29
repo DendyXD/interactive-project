@@ -22,6 +22,7 @@
 
 
 document.querySelector('.close').addEventListener("click", modalHeaderClose)
+document.querySelector(".btnn").addEventListener("click", modalHeaderClose)
 
 window.addEventListener('keydown',  event => {
     if (event.key === "Escape") {
