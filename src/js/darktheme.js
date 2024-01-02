@@ -2,6 +2,20 @@ const themeToggleBtn = document.querySelector("#theme-toggle");
 
 let togglerCounter = 0;
 
+const listOfSymbolsSrcs = [
+    document.querySelector('[alt="sword"]').src,
+    document.querySelector('[alt="g-console"]').src,
+    document.querySelector('[alt="puzzle"]').src,
+    document.querySelector('[alt="ttt"]').src
+]
+
+const listOfDarkSymbolsSrcs = [
+    document.querySelector('[alt="sword dark"]').src,
+    document.querySelector('[alt="g-console dark"]').src,
+    document.querySelector('[alt="puzzle dark"]').src,
+    document.querySelector('[alt="ttt dark"]').src
+]
+
 themeToggleBtn.addEventListener("click", themeTogglerHandler);
 
 function themeTogglerHandler() {
@@ -32,16 +46,16 @@ function themeTogglerHandler() {
             inp.style.color = "black";
         })
         document.querySelectorAll("#logo").forEach((logo) => {
-            logo.src = "/logo-dark.4272bff3.svg";
+            logo.src = document.querySelector('[alt="default logo dark"]').src;
         })
         document.querySelectorAll("#close-symbol").forEach((symb) => {
-            symb.src = "/close-symbol-dark.28d57fa5.svg";
+            symb.src = document.querySelector('[alt="default close dark"]').src;
         })
 
     // Header
+        document.querySelector("header").classList.toggle("dark-select");
         document.querySelector("header").style.backgroundColor = "#0e0713";
         document.querySelector("header").style.color = "white";
-        // document.querySelector("header").style.boxShadow = "100px 100px 10px 110px rgba(255, 255, 255, 0.3)";
         document.querySelectorAll(".header-buttons").forEach((button) => {
             button.style.color = "white";
         })
@@ -49,7 +63,6 @@ function themeTogglerHandler() {
         document.querySelector(".header-greetings").style.color = "white";
         themeToggleBtn.style.backgroundColor = "#0e0713";
         themeToggleBtn.style.color = "white";
-        
 
     // Main
         document.querySelector(".games-container-background").classList.toggle("games-container-background-dark")
@@ -81,6 +94,7 @@ function themeTogglerHandler() {
         document.querySelector("#num2").style.boxShadow = "0 0 0 0";
         document.querySelector(".resultValue").style.backgroundColor = "white";
         document.querySelector(".resultValue").style.color = "black";
+        document.querySelector(".text-main-calc").style.color = "white";
 
     // Time Calculator (game5)
         document.querySelector(".dots").style.border = "1px dashed white";
@@ -88,6 +102,20 @@ function themeTogglerHandler() {
         document.querySelector(".calculateButton-time").style.backgroundColor = "#262230";
         document.querySelector(".inputTime").style.boxShadow = "0 0 0 0";
         document.querySelector(".text-time").style.color = "white";
+
+    // Find Max Number (game8)
+        document.querySelector(".h").style.color = "white";
+        [...document.querySelector(".inp").children].forEach((inp) => {
+            inp.style.backgroundColor = "white";
+            inp.style.color = "black";
+        })
+
+    // Scientists (game9)
+        document.querySelector(".text-game9").style.color = "white";
+        [...document.querySelector("#factContainer").children].forEach((label) => {
+            label.style.color = "black";
+            label.style.backgroundColor = "white";
+        })
 
     // Footer
         document.querySelector("footer").style.color = "white";
@@ -97,6 +125,11 @@ function themeTogglerHandler() {
         document.querySelector(".modal-footer").style.backgroundColor = "#0e0713";
         document.querySelector(".modal-footer").style.color = "white";
         document.querySelector(".modal-footer").querySelector("button").style.backgroundColor = "#0e0713";
+        document.querySelector("#symb1").src = listOfDarkSymbolsSrcs[0];
+        document.querySelector("#symb2").src = listOfDarkSymbolsSrcs[1];
+        document.querySelector("#symb3").src = listOfDarkSymbolsSrcs[2];
+        document.querySelector("#symb4").src = listOfDarkSymbolsSrcs[3];
+
     } else {
      //    _________________________________________________
     // <<-------------------==WHITE THEME==------------------->>
@@ -120,17 +153,17 @@ function themeTogglerHandler() {
         })
         document.querySelectorAll("input").forEach((inp) => {
             inp.style.backgroundColor = "#D7D7D7";
-            inp.style.color = "";
         })
         document.querySelectorAll("#logo").forEach((logo) => {
-            logo.src = "/logo.cd13699a.svg";
+            logo.src = document.querySelector('[alt="default logo"]').src;
         })
         document.querySelectorAll("#close-symbol").forEach((symb) => {
-            symb.src = "/close-symbol.28d57fa5.svg";
+            symb.src = document.querySelector('[alt="default close"]').src;
         })
 
 
     // Header
+        document.querySelector("header").classList.toggle("dark-select");
         document.querySelector("header").style.backgroundColor = "white";
         document.querySelector("header").style.color = "black";
 
@@ -172,6 +205,7 @@ function themeTogglerHandler() {
         document.querySelector("#num2").style.boxShadow = "2px 2px 0px 1px rgba(191, 191, 191)";
         document.querySelector(".resultValue").style.backgroundColor = "#D7D7D7";
         document.querySelector(".resultValue").style.color = "#7E7E7E";
+        document.querySelector(".text-main-calc").style.color = "black";
 
     // Time Calculator (game5)
         document.querySelector(".dots").style.border = "1px dashed black";
@@ -180,13 +214,31 @@ function themeTogglerHandler() {
         document.querySelector(".inputTime").style.boxShadow = "2px 2px 0px 1px rgba(191, 191, 191)";
         document.querySelector(".text-time").style.color = "black";
 
+    // Scientists (game9)
+        document.querySelector(".text-game9").style.color = "black";
+        [...document.querySelector("#factContainer").children].forEach((label) => {
+            label.style.color = "white";
+            label.style.backgroundColor = "black";
+        })
+
+    // Find Max Number (game8)
+        document.querySelector(".h").style.color = "black";
+        [...document.querySelector(".inp").children].forEach((inp) => {
+            inp.style.color = "#7E7E7E";
+        })
+
     // Footer
         document.querySelector("footer").style.color = "black";
         document.querySelector("footer").style.backgroundColor = "white";
     
     // Modal Footer
         document.querySelector(".modal-footer").style.backgroundColor = "white";
+        document.querySelector(".modal-footer").style.color = "black";
         document.querySelector(".modal-footer").querySelector("button").style.backgroundColor = "white";
+        document.querySelector("#symb1").src = listOfSymbolsSrcs[0];
+        document.querySelector("#symb2").src = listOfSymbolsSrcs[1];
+        document.querySelector("#symb3").src = listOfSymbolsSrcs[2];
+        document.querySelector("#symb4").src = listOfSymbolsSrcs[3];
 
     }
 }

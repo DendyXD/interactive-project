@@ -9,3 +9,11 @@
         }
     }
 }
+
+header.dark-select .__select__label {
+    background-color: #262230 !important;
+
+        &:hover {
+            background-color: #484159 !important;
+        }
+}
