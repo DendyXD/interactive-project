@@ -83,9 +83,15 @@ function applyFilter(selectedFact) {
         scientists.forEach(s => s.style.display = (s === oldestAgeScientist || s === youngestAgeScientist) ? 'list-item' : 'none');
         break;
       
-      case 'sameInitials':
-        scientists.forEach(s => s.style.display = (name.charAt(0) === surname.charAt(0)) ? 'list-item' : 'none');
-        break;
+        case 'sameInitials':
+          scientists.forEach(scientist => {
+              const name = scientist.getAttribute('data-name');
+              const surname = scientist.getAttribute('data-surname');
+              const initialsMatch = name.charAt(0).toUpperCase() === surname.charAt(0).toUpperCase();
+      
+              scientist.style.display = initialsMatch ? 'list-item' : 'none';
+          });
+          break;
       default:
         scientist.style.display = 'list-item';
         scientist.style.order = '';
