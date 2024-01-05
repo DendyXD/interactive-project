@@ -16,12 +16,30 @@ const listOfDarkSymbolsSrcs = [
     document.querySelector('[alt="ttt dark"]').src
 ]
 
+const listOfItemsSrc = [
+    document.querySelector('[alt="rock"]').src,
+    document.querySelector('[alt="paper"]').src,
+    document.querySelector('[alt="scissors"]').src,
+]
+
+const listOfDarkItemsSrc = [
+    document.querySelector('[alt="rock dark"]').src,
+    document.querySelector('[alt="paper dark"]').src,
+    document.querySelector('[alt="scissors dark"]').src,
+]
+
+const arrows = [
+    document.querySelector('[alt="left arrow"]').src,
+    document.querySelector('[alt="right arrow"]').src,
+    document.querySelector('[alt="left arrow dark"]').src,
+    document.querySelector('[alt="right arrow dark"]').src
+]
+
 themeToggleBtn.addEventListener("click", themeTogglerHandler);
 
 function themeTogglerHandler() {
     if (togglerCounter === 0) {
         togglerCounter = 1;
-
         document.querySelectorAll("button").forEach((btn) => {
             if (btn !== document.querySelector(".js-game1-button") && btn !== document.querySelector(".js-game2-button")) {
                 btn.style.backgroundColor = "white";
@@ -84,6 +102,9 @@ function themeTogglerHandler() {
         document.querySelector(".comp").style.color = "black";
         document.querySelector(".comp").style.backgroundColor = "white";
         document.querySelector(".compyou").style.color = "white";
+        document.querySelector(".rock").src = listOfDarkItemsSrc[0];
+        document.querySelector(".papers").src = listOfDarkItemsSrc[1];
+        document.querySelector(".scissors").src = listOfDarkItemsSrc[2];
         
     // Calculator (game4)
         document.querySelectorAll(".mathSymbols").forEach((symb) => {
@@ -104,10 +125,9 @@ function themeTogglerHandler() {
         document.querySelector(".text-time").style.color = "white";
 
     // Find Max Number (game8)
-        document.querySelector(".h").style.color = "white";
         [...document.querySelector(".inp").children].forEach((inp) => {
             inp.style.backgroundColor = "white";
-            inp.style.color = "black";
+            inp.style.boxShadow = "0 0 0 0";
         })
 
     // Scientists (game9)
@@ -115,6 +135,21 @@ function themeTogglerHandler() {
         [...document.querySelector("#factContainer").children].forEach((label) => {
             label.style.color = "black";
             label.style.backgroundColor = "white";
+        });
+
+    // Slider
+        [...document.querySelectorAll(".slide-caption")].forEach((caption) => {
+            let arr = [...caption.children];
+            arr[0].style.color = "white";
+            arr[1].style.color = "white";
+        });
+        [...document.querySelectorAll('[role="presentation"]')].forEach((li) => {
+            li.firstChild.style.backgroundColor = "#0e0713";
+        });
+        document.querySelector(".slick-prev").style.backgroundImage = `url("${arrows[2]}")`;
+        document.querySelector(".slick-next").style.backgroundImage = `url("${arrows[3]}")`;
+        document.querySelectorAll(".slick-arrow").forEach((arrow) => {
+            arrow.style.backgroundColor = "#0e0713";
         })
 
     // Footer
@@ -195,6 +230,9 @@ function themeTogglerHandler() {
         document.querySelector(".comp").style.color = "white";
         document.querySelector(".comp").style.backgroundColor = "black";
         document.querySelector(".compyou").style.color = "black";
+        document.querySelector(".rock").src = listOfItemsSrc[0];
+        document.querySelector(".papers").src = listOfItemsSrc[1];
+        document.querySelector(".scissors").src = listOfItemsSrc[2];
         
     // Calculator (game4)
         document.querySelectorAll(".mathSymbols").forEach((symb) => {
@@ -214,18 +252,34 @@ function themeTogglerHandler() {
         document.querySelector(".inputTime").style.boxShadow = "2px 2px 0px 1px rgba(191, 191, 191)";
         document.querySelector(".text-time").style.color = "black";
 
+    // Find Max Number (game8)
+        [...document.querySelector(".inp").children].forEach((inp) => {
+            inp.style.color = "#7E7E7E";
+            inp.style.boxShadow = "3px 3px 0px 1px rgba(191, 191, 191)";
+        })
+
     // Scientists (game9)
         document.querySelector(".text-game9").style.color = "black";
         [...document.querySelector("#factContainer").children].forEach((label) => {
             label.style.color = "white";
             label.style.backgroundColor = "black";
+        });
+
+    // Slider
+        [...document.querySelectorAll(".slide-caption")].forEach((caption) => {
+            let arr = [...caption.children];
+            arr[0].style.color = "black";
+            arr[1].style.color = "#888";
+        });
+        [...document.querySelectorAll('[role="presentation"]')].forEach((li) => {
+            li.firstChild.style.backgroundColor = "white";
+        });
+        document.querySelector(".slick-prev").style.backgroundImage = `url("${arrows[0]}")`;
+        document.querySelector(".slick-next").style.backgroundImage = `url("${arrows[1]}")`;
+        document.querySelectorAll(".slick-arrow").forEach((arrow) => {
+            arrow.style.backgroundColor = "white";
         })
 
-    // Find Max Number (game8)
-        document.querySelector(".h").style.color = "black";
-        [...document.querySelector(".inp").children].forEach((inp) => {
-            inp.style.color = "#7E7E7E";
-        })
 
     // Footer
         document.querySelector("footer").style.color = "black";

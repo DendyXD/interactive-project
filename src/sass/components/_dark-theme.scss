@@ -17,3 +17,7 @@ header.dark-select .__select__label {
             background-color: #484159 !important;
         }
 }
+
+header.dark-select .__select__input:checked + label {
+    background-color: #3d384c !important;
+}

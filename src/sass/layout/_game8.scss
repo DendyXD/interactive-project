@@ -1,38 +1,29 @@
 /* <!-- Enter 3 numbers --> */
 
 .enternum{
-  width: 536px;
-  /* height: 200px; */
-  // border-bottom: 2px solid black;
-  margin: auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 .h{
   text-align: center;
   color: black;
 }
 
-h2{
-font-size: 16px;
-}
-h3{
-font-size: 12px;
-}
 .inp{
 margin: 25px;
 }
 
 .num{
-  display: inline-flex;
-  padding: 10px 20px;
-  align-items: flex-start;
-  gap: 10px;
-  width: 95px;
-  height: 15px;
-  color: #7E7E7E;
+  width: 135px;
+  height: 35px;
+  margin: 25px;
+  background-color: #D7D7D7;
+  border: 0;
   border-radius: 20px;
-  background: #D7D7D7;
-  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: #7E7E7E;
+  font-size: 12px;
+  box-shadow: 3px 3px 0px 1px rgba(191, 191, 191);
 }
 
 .btn{

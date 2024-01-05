@@ -9,7 +9,6 @@ document.querySelectorAll(".__select__label").forEach((category) => {
 })
 
 function gamesFilter() {
-    console.log(document.querySelector(".__select__title").textContent);
     switch (document.querySelector(".__select__title").textContent) {
         case "Числовий":
             numericalGames.forEach((game) => {
@@ -27,9 +26,6 @@ function gamesFilter() {
             entertainmentGames.forEach((game) => {
                 game.style.display = "flex";
                 if (game === document.querySelector(".allrockpaperscissor")) {
-                    // game.style.alignItems = "center";
-                    // game.style.justifyContent = "center";
-                    // game.style.flexDirection = "column";
                     game.style.display = "block";
                 }
             })
@@ -52,17 +48,24 @@ function gamesFilter() {
                 game.style.display = "none";
             })
         break;
-    
-        default:
+        
+        case "Всі":
             acquaintanceGames.forEach((game) => {
                 game.style.display = "flex";
             })
             entertainmentGames.forEach((game) => {
                 game.style.display = "flex";
+                if (game === document.querySelector(".allrockpaperscissor")) {
+                    game.style.display = "block";
+                }
             })
             numericalGames.forEach((game) => {
                 game.style.display = "flex";
             })
+        break;
+    
+        default:
+
         break;
     }
 }
